@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #34495e;
+}
+
+input {
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    color: white;
+}
+
+img {
+    width: 100px;
+}
+
+.form {
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #191919;
+    text-align: center;
+}
+
+.form h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.input-user, .input-pass, .input-email {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 10px;
+    width: 250px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: .25s;
+}
+
+.input-user:hover, .input-pass:hover, .input-email:hover {
+    width: 280px;
+    border-color: #1df0f0;
+}
+
+.form input[type="submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: .25s;
+    cursor: pointer;
+}
+
+.form input[type="submit"]:hover {
+    background: #2ecc71;
+}
+
+/* Change input autofill below this line */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-animation: autofill 0s forwards;
+    animation: autofill 0s forwards;
+}
+
+@keyframes autofill {
+    100% {
+        background: transparent;
+        color: inherit;
+    }
+}
+
+@-webkit-keyframes autofill {
+    100% {
+        background: transparent;
+        color: inherit;
+    }
+}
+/* Change input autofill above this line */
+
+.form p {
+    color: white;
+}
+
+.form p > a {
+    color: #1df0f0;
+}
+
+.form .register-form {
+    display: none;
+}
