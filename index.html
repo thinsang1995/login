@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head translate="no">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Animated Login Form</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+	<script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+	<div class="form">
+		<form class="login-form">
+			<h1>Login</h1>
+			<img src="avata.svg">
+			<div class="input-user">
+				<i class="fas fa-user"></i>
+				<input type="text" id="user-name" placeholder="Username">
+			</div>
+			<div class="input-pass">
+				<i class="fas fa-lock"></i>
+				<input type="password" id="user-pass" placeholder="Password">
+			</div>
+			<input type="submit" name="" value="Login" onclick="checkInfo()">
+			<p id="login">Not Registered? <a href="#" onclick="toRegister()">Register</a></p>
+		</form>
+		<form class="register-form">
+			<h1>Sign Up</h1>
+			<div class="input-user">
+				<i class="fas fa-user"></i>
+				<input type="text" id="enter-name" placeholder="Username">
+			</div>
+			<div class="input-pass">
+				<i class="fas fa-lock"></i>
+				<input type="password" id="enter-password" placeholder="Password">
+			</div>
+			<div class="input-email">
+				<i class="fas fa-envelope"></i>
+				<input type="text" id="enter-email" placeholder="Email">
+			</div>
+			<input type="submit" name="" value="Create" onclick="storeInfo()">
+			<p id="create">Already Registered? <a href="#" onclick="toLogin()">Login</a></p>
+		</form>
+	</div>
+
+</body>
+</html>
